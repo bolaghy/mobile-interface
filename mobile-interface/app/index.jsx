@@ -60,8 +60,8 @@ export default function Index() {
       <TouchableOpacity
         style={{
           backgroundColor: "#0163E1",
-          padding: "12",
-          margin: "12",
+          padding: 12,
+          margin: 2,
           borderRadius: 20,
           justifyContent: "center",
         }}
@@ -78,10 +78,19 @@ export default function Index() {
         </Text>
       </TouchableOpacity>
 
-      <Text style={{color:"white", alignSelf:"center", fontWeight:"condensedBold", fontSize:18}}>
-        Forgotten Password?</Text>
+      <Text
+        style={{
+          color: "white",
+          alignSelf: "center",
+          fontWeight: "condensedBold",
+          fontSize: 18,
+          marginTop:5
+        }}
+      >
+        Forgotten Password?
+      </Text>
 
-        <TouchableOpacity
+      <TouchableOpacity
         style={{
           backgroundColor: "#1A2B33",
           padding: 12,
@@ -108,13 +117,9 @@ export default function Index() {
         source={require("../assets/images/meta4.png")}
         style={{
           alignSelf: "center",
-          marginTop:10
+          marginTop: 10,
         }}
       />
-
-
-
-
     </SafeAreaView>
   );
 }
